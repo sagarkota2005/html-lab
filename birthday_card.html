@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: cardAppear 0.5s ease-in-out;
+        }
+
+        .header {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #61f183;
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+            animation: headerSlide 0.8s ease-in-out;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .content {
+            font-family:'Times New Roman', Times, serif;
+            padding: 30px;
+            text-align: center;
+            animation: contentFade 1s ease-in-out;
+        }
+
+        .content p {
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .content p:last-child {
+            font-size: 1.5rem;
+            color: #ff9861f7;
+            animation: wishesBounce 1.2s infinite; 
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Animations */
+        @keyframes cardAppear {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes headerSlide {
+            from { transform: translateY(-20px); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes contentFade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes wishesBounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="card">
+        <div class="header">
+            <h1>Happy Birthday Bhargavi Akka!</h1>
+        </div>
+        <div class="content">
+            <p>Wishing you a day filled with joy, laughter, and unforgettable moments.</p>
+            <p>May this year bring you happiness, success, and all the best things in life.</p>
+            <p>With love and best wishes,</p>
+            <p>Sagar</p>
+            <p>🫶😘🤗🥳✨</p>
+        </div>
+        <div class="footer">
+            &copy; 2024
+        </div>
+    </div>
+</body>
+</html>
